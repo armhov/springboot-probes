@@ -11,6 +11,16 @@ public class HelloEdpController {
 
     @GetMapping(value = "/api/hello")
     public String hello() {
-        return "Hello, EDP!";
+        return "Hello, KubeRocketCI!";
+    }
+
+    @GetMapping("/api/readiness")
+    public String readiness() {
+        return "readiness-ok";
+    }
+
+    @GetMapping("/api/liveness")
+    public String liveness() {
+        return "liveness-ok";
     }
 }
