@@ -40,7 +40,7 @@ A Helm chart for Kubernetes
 | ingress.tls | list | `[]` |  |
 | livenessProbe.failureThreshold | int | `3` |  |
 | livenessProbe.httpGet.path | string | `"/api/liveness"` |  |
-| livenessProbe.httpGet.port | int | `80` |  |
+| livenessProbe.httpGet.port | int | `8080` |  |
 | livenessProbe.initialDelaySeconds | int | `15` |  |
 | livenessProbe.periodSeconds | int | `5` |  |
 | nameOverride | string | `""` |  |
@@ -50,7 +50,7 @@ A Helm chart for Kubernetes
 | podSecurityContext | object | `{}` |  |
 | readinessProbe.failureThreshold | int | `3` |  |
 | readinessProbe.httpGet.path | string | `"/api/readiness"` |  |
-| readinessProbe.httpGet.port | int | `80` |  |
+| readinessProbe.httpGet.port | int | `8080` |  |
 | readinessProbe.initialDelaySeconds | int | `15` |  |
 | readinessProbe.periodSeconds | int | `5` |  |
 | replicaCount | int | `1` |  |
